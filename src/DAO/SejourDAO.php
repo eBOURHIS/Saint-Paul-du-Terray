@@ -1,8 +1,17 @@
 <?php
-
+/**
+ * @author Erwan Bourhis 
+ * @license GNU
+ * @version 1.5.0
+ */
 namespace stpaul\DAO;
 use Doctrine\DBAL\Connection;
 use stpaul\Domain\Sejour;
+
+/**
+ * Class SejourDAO
+ * @package stpaul\DAO
+ */
 class SejourDAO
 {
     /**
@@ -43,7 +52,7 @@ class SejourDAO
      * Creates an sejour object based on a DB row.
      *
      * @param array $row The DB row containing sejour data.
-     * @return \MicroCMS\Domain\Sejour
+     * @return \stpaul\Domain\Sejour
      */
     private function buildSejour(array $row) {
         $sejour = new Sejour();

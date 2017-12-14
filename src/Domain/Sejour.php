@@ -1,63 +1,143 @@
 <?php
+/**
+ * @author Erwan Bourhis 
+ * @license GNU
+ * @version 1.5.0
+ */
+
 namespace stpaul\Domain;
 
-class Sejour 
-{
+/**
+ * Class Sejour
+ * @package stpaul\Domain
+ */
+class Sejour
+{/**
+ * Sejour ID
+ *
+ * @var int
+ */
     private $SEJ_NO;
+    /**
+     * Sejour name
+     *
+     * @var string
+     */
     private $SEJ_INTITULE;
+    /**
+     * Pric Sejour
+     *
+     * @var int
+     */
     private $SEJ_MONTANT_MBI;
+    /**
+     * Sejour date
+     *
+     * @var string
+     */
     private $SEJ_DTE_DEB;
+    /**
+     * Time sejour
+     *
+     * @var int
+     */
     private $SEJ_DUREE;
 
-    // public function __construct($SEJ_NO, $SEJI_NTITULE, $SEJ_MONTANT_MBI, $SEJ_DTE_DEB, $SEJ_DUREE) {
-    //     $this->SEJ_NO = $SEJ_NO;
-    //     $this->SEJI_NTITULE = $SEJI_NTITULE;
-    //     $this->SEJ_MONTANT_MBI = $SEJ_MONTANT_MBI;
-    //     $this->SEJ_DTE_DEB = $SEJ_DTE_DEB;
-    //     $this->SEJ_DUREE = $SEJ_DUREE;
-    // }
-
+    /**
+     * get SEJ_NO
+     *
+     * @return int
+     */
     public function getSEJ_NO()
     {
         return $this->_SEJ_NO;
     }
+    /**
+     * get SEJ_INTITULE
+     *
+     * @return string
+     */
      public function getSEJ_INTITULE()
     {
         return $this->_SEJ_INTITULE;
     }
+    /**
+     * get SEJ_MONTANT_MBI
+     *
+     * @return int
+     */
      public function getSEJ_MONTANT_MBI()
     {
         return $this->_SEJ_MONTANT_MBI;
     }
+    /**
+     * get SEJ_DTE_DEB
+     *
+     * @return string
+     */
      public function getSEJ_DTE_DEB()
     {
         return $this->_SEJ_DTE_DEB;
     }
+    /**
+     * get SEJ_DUREE
+     *
+     * @return int
+     */
      public function getSEJ_DUREE()
     {
         return $this->_SEJ_DUREE;
     }
-
+/**
+ * set $SEJ_NO
+ *
+ * @param int $SEJ_NO
+ * @return Sejour
+ */
     public function setSEJ_NO($SEJ_NO)
   {
     $this->_SEJ_NO = $SEJ_NO;
     return $this;
   }
+  /**
+   * set $SEJ_INTTULE
+   *
+   * @param string $SEJ_INTITULE
+   * @return Sejour
+   */
     public function setSEJ_INTITULE($SEJ_INTITULE)
   {
     $this->_SEJ_INTITULE = $SEJ_INTITULE;
     return $this;
   }
+  /**
+   * set $SEJ_MONTANT_MBI
+   *
+   * @param  int $SEJ_MONTANT_MBI
+   * @return Sejour
+   */
     public function setSEJ_MONTANT_MBI($SEJ_MONTANT_MBI)
   {
     $this->_SEJ_MONTANT_MBI = $SEJ_MONTANT_MBI;
     return $this;
   }
+  /**
+   * set $SEJ_DATE_DEBUT
+   *
+   * @param string $SEJ_DTE_DEB
+   * @return void
+   */
     public function setSEJ_DTE_DEB($SEJ_DTE_DEB)
   {
     $this->_SEJ_DTE_DEB = $SEJ_DTE_DEB;
     return $this;
   }
+  /**
+   * set $SEJ_DUREE
+   *
+   * @param int $SEJ_DUREE
+   * @return Sejour
+   */
     public function setSEJ_DUREE($SEJ_DUREE)
   {
     $this->_SEJ_DUREE = $SEJ_DUREE;
