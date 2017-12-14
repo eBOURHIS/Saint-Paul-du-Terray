@@ -2,7 +2,15 @@
     "name": "16bourhise/saint-paul-du-terray",
     "description": "TP SAINT PAUL DU TERRAY BTS SIO2",
     "require": {
-        "silex/silex": "1.3.x-dev"
+        "silex/silex": "1.3.x-dev",
+        "Doctrine/DBAL": "v2.5.13",
+        "twig/twig": "~1.28"
+        
+    },
+    "autoload": {
+        "psr-4": {
+            "stpaul\\": "src"
+        }
     },
     "license": "GPL-3.0",
     "authors": [
@@ -11,4 +19,5 @@
             "email": "erwan.bourhis29@gmail.com"
         }
     ]
+    
 }

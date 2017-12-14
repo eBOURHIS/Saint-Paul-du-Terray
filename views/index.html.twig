@@ -46,15 +46,14 @@
 		<right class="right">
 			<h2>Liste des séjours prévus </h2>
 			<fieldset>
-			<?php
-			foreach ($sejours as $sejour): ?>
+			    {% for sejour in sejours %} 
 				<sejour>
-					<h2><p><?php echo $sejour->getSEJ_INTITULE() ?></p></h2>
-					<?php echo $sejour->getSEJ_MONTANT_MBI().'€' ?><BR/>
-					<?php echo 'A partir du '.$sejour->getSEJ_DTE_DEB() ?>
-					<?php echo $sejour->getSEJ_DUREE().' nuits' ?>
+					<h2><p> {{ sejour.SEJ_INTITULE }} </p></h2>
+					 		{{ sejour.SEJ_MONTANT_MBI }} € <br />
+			'A partir du '  {{ sejour.SEJ_DTE_DEB }}
+					 		{{ sejour.SEJ_DUREE  }} ' nuits'
 				</sejour>
-			<?php endforeach ?>
+			{% endfor %}
 			</fieldset>
 		</right>
 </main>
